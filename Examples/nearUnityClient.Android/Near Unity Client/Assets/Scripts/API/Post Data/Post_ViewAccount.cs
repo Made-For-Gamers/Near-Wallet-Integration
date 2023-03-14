@@ -7,7 +7,7 @@ public class Post_ViewAccount
     public string jsonrpc = "2.0";
     public string id = "mfg.testnet";
     public string method = "query";
-    public Param Params = new Param();
+    public Param @params = new Param();
 
 
 

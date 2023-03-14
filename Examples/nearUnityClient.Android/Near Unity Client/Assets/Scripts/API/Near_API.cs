@@ -34,7 +34,7 @@ public class Near_API : MonoBehaviour
         //Init post request
         account = new Post_ViewAccount();
         request = new UnityWebRequest(url, "POST");
-        byte[] rawData = Encoding.UTF8.GetBytes(JsonConvert.SerializeObject(account).ToLower());
+        byte[] rawData = Encoding.UTF8.GetBytes(JsonConvert.SerializeObject(account));
         request.SetRequestHeader("Content-Type", "application/json");
         request.uploadHandler = new UploadHandlerRaw(rawData);
         request.downloadHandler = new DownloadHandlerBuffer();
@@ -58,6 +58,7 @@ public class Near_API : MonoBehaviour
         {
             Debug.LogError(string.Format("API post error: {0}", request.error));
         }
+        request.Dispose();
     }
 }
 
