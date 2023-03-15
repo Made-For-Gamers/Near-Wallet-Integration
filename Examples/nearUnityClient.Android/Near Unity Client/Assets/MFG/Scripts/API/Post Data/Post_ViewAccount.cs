@@ -1,6 +1,3 @@
-using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
 
 public class Post_ViewAccount 
 {
@@ -8,8 +5,6 @@ public class Post_ViewAccount
     public string id = "mfg.testnet";
     public string method = "query";
     public Param @params = new Param();
-
-
 
     public class Param
     {
