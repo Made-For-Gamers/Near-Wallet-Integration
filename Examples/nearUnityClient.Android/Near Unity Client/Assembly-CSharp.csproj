@@ -58,9 +58,9 @@
   <ItemGroup>
     <Compile Include="Assets\RFG\NEAR\Scripts\NearCallbacks.cs" />
     <Compile Include="Assets\RFG\NEAR\Scripts\Utils\RestAPI.cs" />
-    <Compile Include="Assets\Scripts\API\Near Data\ViewAccount.cs" />
-    <Compile Include="Assets\Scripts\API\Post Data\Post_ViewAccount.cs" />
-    <Compile Include="Assets\Scripts\API\Near_API.cs" />
+    <Compile Include="Assets\MFG\Scripts\API\Near Data\ViewAccount.cs" />
+    <Compile Include="Assets\MFG\Scripts\API\Post Data\Post_ViewAccount.cs" />
+    <Compile Include="Assets\MFG\Scripts\API\Near_API.cs" />
     <Compile Include="Assets\RFG\NEAR\Scripts\NearController.cs" />
     <Compile Include="Assets\NearExample\SignOutButtonHandler.cs" />
     <Compile Include="Assets\NearExample\LoginSceneScript.cs" />

@@ -52,7 +52,6 @@ public class Near_API : MonoBehaviour
                     + "Storage Paid At: " + viewAccount.result.storage_paid_at + "\n"
                      + "Storage Usage: " + viewAccount.result.storage_usage + "\n"
                        + "Account ID: " + viewAccount.id + "\n";
-
         }
         else
         {
