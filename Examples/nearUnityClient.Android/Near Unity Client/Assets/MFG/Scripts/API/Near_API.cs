@@ -16,17 +16,17 @@ public class Near_API : MonoBehaviour
     private Post_ViewAccount account;
 
     //Base URLs
-    //static Dictionary<string, string> baseUrl = new Dictionary<string, string>()
-    //{
-    //    {"mainnet", "https://rpc.mainnet.near.org"},
-    //    {"testnet", "https://rpc.testnet.near.org"},
-    //    {"betanet", "https://rpc.betanet.near.org"},
-    //    {"localnet", "http://localhost:3030"},
-    //};
+    static Dictionary<string, string> baseUrl = new Dictionary<string, string>()
+    {
+        {"mainnet", "https://rpc.mainnet.near.org"},
+        {"testnet", "https://rpc.testnet.near.org"},
+        {"betanet", "https://rpc.betanet.near.org"},
+        {"localnet", "http://localhost:3030"},
+    };
 
     private void Start()
     {
-        StartCoroutine(ViewAccount("https://rpc.testnet.near.org"));
+        StartCoroutine(ViewAccount(baseUrl["testnet"]));
     }
 
     private IEnumerator ViewAccount(string url)
