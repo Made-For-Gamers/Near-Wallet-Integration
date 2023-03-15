@@ -33,31 +33,34 @@ public class Near_API : MonoBehaviour
     {
         //Init post request
         account = new Post_ViewAccount();
-        request = new UnityWebRequest(url, "POST");
         byte[] rawData = Encoding.UTF8.GetBytes(JsonConvert.SerializeObject(account));
-        request.SetRequestHeader("Content-Type", "application/json");
-        request.uploadHandler = new UploadHandlerRaw(rawData);
-        request.downloadHandler = new DownloadHandlerBuffer();
-        yield return request.SendWebRequest();
 
-        //Result
-        if (request.result == UnityWebRequest.Result.Success)
+        using (request = new UnityWebRequest(url, "POST"))
         {
-            ViewAccount viewAccount = JsonConvert.DeserializeObject<ViewAccount>(request.downloadHandler.text);
-            resultText.text = "Amount: " + viewAccount.result.amount + "\n"
-                + "Block Hash: " + viewAccount.result.block_hash + "\n"
-                 + "Block Height: " + viewAccount.result.block_height + "\n"
-                  + "Code Hash: " + viewAccount.result.code_hash + "\n"
-                   + "Locked: " + viewAccount.result.locked + "\n"
-                    + "Storage Paid At: " + viewAccount.result.storage_paid_at + "\n"
-                     + "Storage Usage: " + viewAccount.result.storage_usage + "\n"
-                       + "Account ID: " + viewAccount.id + "\n";
+           
+            request.SetRequestHeader("Content-Type", "application/json");
+            request.uploadHandler = new UploadHandlerRaw(rawData);
+            request.downloadHandler = new DownloadHandlerBuffer();
+            yield return request.SendWebRequest();
+
+            //Result
+            if (request.result == UnityWebRequest.Result.Success)
+            {
+                ViewAccount viewAccount = JsonConvert.DeserializeObject<ViewAccount>(request.downloadHandler.text);
+                resultText.text = "Amount: " + viewAccount.result.amount + "\n"
+                    + "Block Hash: " + viewAccount.result.block_hash + "\n"
+                     + "Block Height: " + viewAccount.result.block_height + "\n"
+                      + "Code Hash: " + viewAccount.result.code_hash + "\n"
+                       + "Locked: " + viewAccount.result.locked + "\n"
+                        + "Storage Paid At: " + viewAccount.result.storage_paid_at + "\n"
+                         + "Storage Usage: " + viewAccount.result.storage_usage + "\n"
+                           + "Account ID: " + viewAccount.id + "\n";
+            }
+            else
+            {
+                Debug.LogError(string.Format("API post error: {0}", request.error));
+            }
         }
-        else
-        {
-            Debug.LogError(string.Format("API post error: {0}", request.error));
-        }
-        request.Dispose();
     }
 }
 
