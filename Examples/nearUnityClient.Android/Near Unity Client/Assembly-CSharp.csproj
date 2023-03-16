@@ -67,6 +67,7 @@
     <Compile Include="Assets\NearExample\SplashSceneScript.cs" />
     <Compile Include="Assets\RFG\NEAR\Scripts\UI\UIToken.cs" />
     <Compile Include="Assets\RFG\NEAR\Scripts\NearAPI.cs" />
+    <Compile Include="Assets\MFG\Scripts\Auth\WalletAuthenticate.cs" />
     <Compile Include="Assets\RFG\NEAR\Scripts\Utils\UnityAsyncOperationAwaiter.cs" />
     <Compile Include="Assets\NearExample\NearSceneScript.cs" />
     <Compile Include="Assets\NearExample\NearPersistentManager.cs" />

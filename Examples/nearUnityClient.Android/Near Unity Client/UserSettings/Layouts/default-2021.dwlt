@@ -19,7 +19,7 @@ MonoBehaviour:
     width: 2560
     height: 1349
   m_ShowMode: 4
-  m_Title: Scene
+  m_Title: Game
   m_RootView: {fileID: 8}
   m_MinSize: {x: 875, y: 300}
   m_MaxSize: {x: 10000, y: 10000}
@@ -91,8 +91,8 @@ MonoBehaviour:
     y: 0
     width: 841
     height: 1025
-  m_MinSize: {x: 100, y: 121}
-  m_MaxSize: {x: 4000, y: 4021}
+  m_MinSize: {x: 100, y: 100}
+  m_MaxSize: {x: 4000, y: 4000}
   m_ActualView: {fileID: 20}
   m_Panes:
   - {fileID: 20}
@@ -121,7 +121,7 @@ MonoBehaviour:
   m_MinSize: {x: 100, y: 121}
   m_MaxSize: {x: 4000, y: 4021}
   vertical: 0
-  controlID: 49
+  controlID: 212
 --- !u!114 &6
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -176,7 +176,7 @@ MonoBehaviour:
   m_MinSize: {x: 100, y: 100}
   m_MaxSize: {x: 8096, y: 8096}
   vertical: 0
-  controlID: 191
+  controlID: 128
 --- !u!114 &8
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -273,7 +273,7 @@ MonoBehaviour:
   m_MinSize: {x: 300, y: 100}
   m_MaxSize: {x: 24288, y: 8096}
   vertical: 0
-  controlID: 22
+  controlID: 181
 --- !u!114 &12
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -721,9 +721,9 @@ MonoBehaviour:
   m_PlayAudio: 0
   m_AudioPlay: 0
   m_Position:
-    m_Target: {x: 1280, y: 720, z: 0}
+    m_Target: {x: 1278.8269, y: 720, z: 0}
     speed: 2
-    m_Value: {x: 1280, y: 720, z: 0}
+    m_Value: {x: 1278.8269, y: 720, z: 0}
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -774,9 +774,9 @@ MonoBehaviour:
     speed: 2
     m_Value: {x: 0, y: 0, z: 0, w: 1}
   m_Size:
-    m_Target: 1468.6047
+    m_Target: 103.077644
     speed: 2
-    m_Value: 1468.6047
+    m_Value: 103.077644
   m_Ortho:
     m_Target: 1
     speed: 2
@@ -824,7 +824,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 0
     y: 73
-    width: 1874
+    width: 1873
     height: 1278
   m_ViewDataDictionary: {fileID: 0}
   m_OverlayCanvas:
@@ -1042,7 +1042,7 @@ MonoBehaviour:
     m_SaveData: []
   m_LockTracker:
     m_IsLocked: 0
-  m_LastSelectedObjectID: 29200
+  m_LastSelectedObjectID: -18994
 --- !u!114 &23
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -1085,13 +1085,13 @@ MonoBehaviour:
     m_SkipHidden: 0
     m_SearchArea: 1
     m_Folders:
-    - Assets/NearExample/Textures and Sprites/SF UI
+    - Assets/Plugins
     m_Globs: []
     m_OriginalText: 
   m_ViewMode: 1
   m_StartGridSize: 96
   m_LastFolders:
-  - Assets/NearExample/Textures and Sprites/SF UI
+  - Assets/Plugins
   m_LastFoldersGridSize: 96
   m_LastProjectPath: C:\Unity Projects\Near-Wallet-Integration\Examples\nearUnityClient.Android\Near
     Unity Client
@@ -1099,9 +1099,9 @@ MonoBehaviour:
     m_IsLocked: 0
   m_FolderTreeState:
     scrollPos: {x: 0, y: 0}
-    m_SelectedIDs: de630000
-    m_LastClickedID: 25566
-    m_ExpandedIDs: 00000000e8590000ea590000ec590000ee590000f0590000fe5900000e5a0000
+    m_SelectedIDs: 205a0000
+    m_LastClickedID: 23072
+    m_ExpandedIDs: 00000000fe590000005a0000025a0000045a0000065a0000085a00000a5a0000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -1129,7 +1129,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 00000000e8590000ea590000ec590000ee590000f0590000
+    m_ExpandedIDs: 00000000fe590000005a0000025a0000045a0000065a0000085a00000a5a0000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -1156,7 +1156,7 @@ MonoBehaviour:
   m_ListAreaState:
     m_SelectedInstanceIDs: 
     m_LastClickedInstanceID: 0
-    m_HadKeyboardFocusLastEvent: 0
+    m_HadKeyboardFocusLastEvent: 1
     m_ExpandedInstanceIDs: 8a9c000000000000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
@@ -1301,7 +1301,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 0
     y: 73
-    width: 1874
+    width: 1873
     height: 1278
   m_ViewDataDictionary: {fileID: 0}
   m_OverlayCanvas:
@@ -1339,9 +1339,9 @@ MonoBehaviour:
   m_SceneHierarchy:
     m_TreeViewState:
       scrollPos: {x: 0, y: 0}
-      m_SelectedIDs: 4c5a0000
-      m_LastClickedID: 23116
-      m_ExpandedIDs: 5ef9ffff36fbffff345a0000
+      m_SelectedIDs: 
+      m_LastClickedID: 0
+      m_ExpandedIDs: 5ca0ffffa4a0ffffaaa0ffff7aa1ffffc2a1ffffc8a1fffff6a2ffff3ea3ffff44a3ffff64a4ffffaca4ffffb2a4ffff58a5ffffa0a5ffffa6a5ffff5ea6ffffa6a6ffffaca6ffff80a7ffffc8a7ffffcea7ffffe0a8ffff28a9ffff2ea9ffff26aaffff6eaaffff74aaffff54abffff9cabffffa2abffffc6acffff0eadffff14adfffffaadffff42aeffff48aeffff32afffff7aafffff80afffff5cb0ffffa4b0ffffaab0ffff84b1ffffccb1ffffd2b1ffffccb2ffff14b3ffff1ab3fffffcb3ffff44b4ffff4ab4ffff2ab5ffff72b5ffff78b5ffff92b6ffffdab6ffffe0b6ffffd0b7ffff18b8ffff1eb8fffffeb8ffff46b9ffff4cb9ffff44baffff8cbaffff92baffffb2bbfffffabbffff00bcfffff6bcffff3ebdffff44bdffff40beffff88beffff8ebeffffa8bffffff0bffffff6bfffffd4c0ffff1cc1ffff22c1ffff04c2ffff4cc2ffff52c2ffff2cc3ffff74c3ffff7ac3ffff5ac4ffffa2c4ffffa8c4ffffd0c5ffff18c6ffff1ec6ffff36c7ffff7ec7ffff84c7ffff76c8ffffbec8ffffc4c8ffffe8c9ffff30caffff5acbffff28cdffff70cdffff76cdffff50ceffff98ceffff9eceffff74cfffffbccfffffc2cfffffeed0ffff36d1ffff3cd1ffff44d2ffff8cd2ffff92d2ffff3cd3ffff84d3ffff8ad3ffff66d4ffffaed4ffffb4d4ffff90d5ffffd8d5ffffded5ffff88d7ffffd0d7ffffd6d7fffffad8ffff42d9ffff48d9ffff70daffffb8daffffbedafffff0dbffff38dcffff3edcffff4cddffff94ddffff9addffffe6deffff2edfffff38dfffffb0e0fffff8e0fffffee0ffff2ae2ffff72e2ffff78e2ffff6ee3ffffb6e3ffffbce3ffff9ae4ffffe2e4ffffe8e4fffff8e5ffff40e6ffff46e6ffff20e7ffff68e7ffff6ee7ffff4ee8ffff96e8ffff9ce8ffffe4e9ffff2ceaffff32eaffff66ebffffaeebffffb4ebffff9cecffffe4ecffffeaecffffeeedffff36eeffff3ceeffff20efffff68efffff92f0ffff42f2ffff8af2ffff90f2ffff5cf4ffffa4f4ffffaaf4ffffa2f5ffffeaf5fffff0f5ffff48f7ffff90f7ffffbef8ffff36fbffff
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
