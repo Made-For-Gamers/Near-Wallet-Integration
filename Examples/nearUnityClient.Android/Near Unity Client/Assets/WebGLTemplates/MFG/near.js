@@ -1,1 +1,1 @@
- import * as nearAPI from "near-api-js";
+import * as nearAPI from "/near-api-js";

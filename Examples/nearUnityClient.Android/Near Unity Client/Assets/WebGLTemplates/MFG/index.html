@@ -7,7 +7,7 @@
     <title>{{{ PRODUCT_NAME }}}</title>
     <link rel="shortcut icon" href="TemplateData/favicon.ico">
     <link rel="stylesheet" href="TemplateData/style.css">
-    <script src="https://cdn.jsdelivr.net/npm/near-api-js@0.44.2/dist/near-api-js.min.js" integrity="sha256-W5o4c5DRZZXMKjuL41jsaoBpE/UHMkrGvIxN9HcjNSY=" crossorigin="anonymous"></script>
+    <script type="module" src="https://cdn.jsdelivr.net/npm/near-api-js@0.44.2/dist/near-api-js.min.js" integrity="sha256-W5o4c5DRZZXMKjuL41jsaoBpE/UHMkrGvIxN9HcjNSY=" crossorigin="anonymous"></script>
     <script src="near.js"></script>
 </head>
 <body class="{{{ SPLASH_SCREEN_STYLE.toLowerCase() }}}">
@@ -83,7 +83,9 @@
           progressBarEmpty.style.display = "";
           progressBarFull.style.width = `${100 * progress}%`;
         }).then((unityInstance) => {
-            mfgInstance = unityInstance;
+
+            window.mfgInstance = unityInstance;
+
           loadingCover.style.display = "none";
           if (canFullscreen) {
             if (!hideFullScreenButton) {
@@ -98,16 +100,6 @@
         });
       };
       document.body.appendChild(script);
-    </script>
-
-
-    <script type="text/javascript">
-
-        window.MyWallet = function () {
-
-            const { connect, keyStores, WalletConnection } = nearAPI;
-
-        };
     </script>
 </body>
 </html>

@@ -12,7 +12,7 @@ public class WalletAuthenticate : MonoBehaviour
 
     public void AuthenticateTest()
     {
-         authenticateWithNearWallet("MFG App", "", "OnAuthenticationSuccess", "OnAuthenticationFailure");
+         authenticateWithNearWallet("MFG App", "test", "OnAuthenticationSuccess", "OnAuthenticationFailure");
     }
 
 #endif
