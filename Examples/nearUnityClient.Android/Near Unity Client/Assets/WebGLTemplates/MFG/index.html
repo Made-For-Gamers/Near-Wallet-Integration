@@ -7,8 +7,13 @@
     <title>{{{ PRODUCT_NAME }}}</title>
     <link rel="shortcut icon" href="TemplateData/favicon.ico">
     <link rel="stylesheet" href="TemplateData/style.css">
- <!--   <script src="https://cdn.jsdelivr.net/npm/near-api-js@0.44.2/dist/near-api-js.min.js" integrity="sha256-W5o4c5DRZZXMKjuL41jsaoBpE/UHMkrGvIxN9HcjNSY=" crossorigin="anonymous"></script>-->
- 
+    <script src="https://cdn.jsdelivr.net/npm/near-api-js@1.1.0/dist/near-api-js.js"></script> 
+
+    <script type="text/javascript">
+      import * as nearApi from "./near-api-js.min.js";
+
+    
+    </script>  
 </head>
 
 <body class="{{{ SPLASH_SCREEN_STYLE.toLowerCase() }}}">
@@ -27,22 +32,7 @@
             </div>
         </div>
         <div id="unity-fullscreen-button" style="display: none;"></div>
-        <script>
-            var MyFunc = async function (appKey, contractName, onSuccess, onFailure) {
-                const { connect, WalletConnection } = nearAPI;
 
-                const connectionConfig = {
-                    networkId: "testnet",
-                    nodeUrl: "https://rpc.testnet.near.org",
-                    walletUrl: "https://wallet.testnet.near.org",
-                    helperUrl: "https://helper.testnet.near.org",
-                    explorerUrl: "https://explorer.testnet.near.org",
-                };
-
-                // connect to NEAR
-                const nearConnection = await connect(connectionConfig);
-            }
-        </script>
         <script>
           const hideFullScreenButton = "{{{ HIDE_FULL_SCREEN_BUTTON }}}";
           const buildUrl = "Build";
